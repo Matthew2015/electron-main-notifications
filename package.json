@@ -1,0 +1,25 @@
+{
+  "name": "electron-main-notifications",
+  "version": "1.0.0",
+  "description": "A node module for sending notifications in electron applications fired from main process",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [
+    "electron",
+    "notification"
+  ],
+  "repository": "git@github.com:Matthew2015/electron-main-notifications.git",
+  "author": "Matthew",
+  "license": "MIT",
+  "standard": {
+    "globals": [
+      "CodeMirror"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^7.1.2"
+  },
+  "dependencies": {
+  }
+}
