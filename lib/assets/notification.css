@@ -1,0 +1,87 @@
+html,
+body {
+  overflow  : hidden;
+  background: var(--primary);
+  color     : #fff;
+  margin    : 0;
+  padding   : 0;
+}
+
+a {
+  color: #fff;
+}
+
+#notification {
+  height             : 100vh;
+  margin             : 0;
+  position           : relative;
+  font-family        : Helvetica, Arial, sans-serif;
+  background-image   : linear-gradient(var(--primary-rgb), var(--primary-rgbl));
+  border             : 1px solid var(--primary-rgb);
+  box-sizing         : border-box;
+  /* -webkit-app-region : drag; */
+  -webkit-user-select: none;
+}
+
+
+#notification .icon {
+  width : 90px;
+  height: 80px;
+  float : left;
+}
+
+#notification .icon img {
+  padding: 10px 15px 0 15px;
+  width  : 60px;
+}
+
+#notification.actions {
+  -webkit-app-region: no-drag;
+}
+
+
+#notification.actions .message {
+  width: 205px;
+}
+
+#notification .message {
+  height       : 80px;
+  width        : 310px;
+  float        : left;
+  text-overflow: clip;
+  white-space  : nowrap;
+  overflow     : hidden;
+  position     : absolute;
+  left         : 90px;
+}
+
+#notification .message:before {
+  content : '';
+  width   : 100%;
+  height  : 100%;
+  position: absolute;
+  left    : 0;
+  top     : 0;
+}
+
+#notification .message h2 {
+  padding: 20px 0 0 0px;
+  margin : 0 0 5px;
+  font   : bold 18px Myriad, Helvetica, Arial, sans-serif;
+}
+
+#notification .message p {
+  padding    : 0;
+  margin     : 0;
+  font       : bold 13px Myriad, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+.close {
+  position: absolute;
+  right   : 20px;
+  top     : 10px;
+}
+.close:hover {
+  cursor: pointer;
+}
