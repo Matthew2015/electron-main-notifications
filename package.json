@@ -1,6 +1,6 @@
 {
   "name": "electron-main-notifications",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A node module for sending notifications in electron applications fired from main process",
   "main": "index.js",
   "scripts": {
